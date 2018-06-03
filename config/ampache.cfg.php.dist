@@ -1001,7 +1001,8 @@ encode_ss_duration = "-t %DURATION%"
 ;proxy_user = ""
 ;proxy_pass = ""
 
-; If Ampache is behind an https reverse proxy, force use HTTPS protocol.
+; If Ampache is behind an https reverse proxy, force use HTTPS protocol. Will not work if the proxy is on localhost.
+; If the reverse proxy is on the same host as the apache server, you must set "local_web_path" to the full external url of your server.
 ;Default: false
 ;force_ssl = "true"
 
